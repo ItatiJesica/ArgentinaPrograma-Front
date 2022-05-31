@@ -1,2 +1,2 @@
 # ArgentinaPrograma
-Repositorio del Curso #YoProgramo - Balmaceda Jesica Itati
+Repositorio del Front Curso #YoProgramo - Balmaceda Jesica Itati
