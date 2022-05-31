@@ -1,0 +1,23 @@
+<div class="card mat-card" id="proyectos">
+    <div class="mat-card-title">
+        <h2>Proyectos</h2>
+    </div>
+    <div>
+        <ul class="item-list">
+            <li *ngFor="let proyecto of proyectos">
+                <div class="data-container">
+                    <div class="logo-image-container">
+                        <img class="logos" [src]="proyecto.logo">
+                        <div class="seccion-lista">
+                            <div>
+                                <h2>{{proyecto.nombre}}</h2>
+                                <h3>{{proyecto.descripcion}}</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

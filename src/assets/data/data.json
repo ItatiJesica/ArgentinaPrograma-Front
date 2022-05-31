@@ -1,0 +1,116 @@
+{
+    "acercade":[{
+        "imagenPerfil":"../../../assets/perfil.jpeg",
+        "name": "Jesica Balmaceda",
+        "titulo": "Profesora en Ciencias Económicas",
+        "ubicacion":"Posadas, Misiones (Argentina)",
+        "descripcion":"Profesora en Ciencias Económicas egresada de la Universidad Nacional de Misiones - Facultad de Humanidades y Ciencias Sociales. Estudiante de Contador Público en la Universidad Nacional de Misiones - Facultad de Ciencias Económicas."
+    }],
+    "experiencia": [{
+            "empresa":"CoopKnow",
+            "puesto": "Pasante",
+            "tipoEmpleo": "Jornada Parcial",
+            "img": "../../../assets/005-robotica-logo-COOPKNOW-versiones-2-1-1.png",
+            "comienzo": "Febrero 2021",
+            "fin": "Diciembre 2021",
+            "lapso de tiempo": "10 meses",
+            "ubicacion": "Posadas, Misiones (Argentina)"
+        },
+        {
+            "empresa":"Centro de Apoyo - San Isidro",
+            "puesto": "Voluntaria",
+            "tipoEmpleo": "Jornada Parcial",
+            "img":"../../../assets/logo-centro-apoyo.png",
+            "comienzo": "Febrero 2022",
+            "fin": "Actualidad",
+            "lapso de tiempo": "1 mes",
+            "ubicacion": "Posadas, Misiones (Argentina)"  
+        }
+    ],
+    "educacion" :[{
+            "institucion":"Universidad Nacional de Misiones - Facultad de Humanidades y Ciencias Sociales",
+            "titulo": "Profesora en Ciencias Economicas",
+            "img":"../../../assets/unam.png",
+            "comienzo": "Febrero 2018",
+            "fin": "Diciembre 2021",
+            "ubicacion": "Posadas, Misiones (Argentina)"  
+        },
+        {
+            "institucion":"Universidad Nacional de Misiones - Facultad de Ciencias Económicas",
+            "titulo": "Contador Público",
+            "img":"../../../assets/unam.png",
+            "comienzo": "Febrero 2022",
+            "fin": "En curso",
+            "ubicacion": "Posadas, Misiones (Argentina)"  
+
+        },
+        {
+            "institucion":"Universidad Nacional de Misiones - Facultad de Ciencias Exactas Químicas y Naturales",
+            "titulo": "Analista en Sistemas de Computación",
+            "img":"../../../assets/unam.png",
+            "comienzo": "Febrero 2020",
+            "fin": "En curso",
+            "ubicacion": "Posadas, Misiones (Argentina)"  
+
+        }
+    ],
+    
+    "habilidades": [
+        {
+            "nombre": "HTML ",
+            "porcentaje": "20",
+            "unidad":"",
+            "img": "../../../assets/html.png"
+        },
+        {
+            "nombre": "CSS",
+            "porcentaje": "10",
+            "unidad":"",
+            "img": "../../../assets/css.png"
+        },
+        {
+            "nombre": "JavaScript",
+            "porcentaje": "30",
+            "unidad":"",
+            "img": "../../../assets/js.png"
+        },
+        {
+            "nombre": "Java",
+            "porcentaje": "5",
+            "unidad":"",
+            "img": "../../../assets/java.png"
+        },
+        {
+            "nombre": "Angular",
+            "porcentaje": "15",
+            "unidad":"",
+            "img": "../../../assets/angular.png"
+        },
+        {
+            "nombre": "Angular",
+            "porcentaje": "15",
+            "unidad":"",
+            "img": "../../../assets/angular.png"
+        }
+    ],
+
+    "proyectos": [{
+            "nombre": " Prototipo el robot Akrop",
+            "comienzo":"2019",
+            "fin":"Actualidad",
+            "url":"https://comunidad.socialab.com/challenges/soluciones2019/idea/95899",
+            "descripcion":" ",
+            "ubicacion":"Posadas, Misiones (Argentina)",
+            "img":"https://comunidad.socialab.com/uploads/15679762735d756b510c5d5.jpg?w=1080&crop-to-fit"
+        },
+        {
+            "nombre": " Prototipo el robot Akrop",
+            "comienzo":"2019",
+            "fin":"Actualidad",
+            "url":"https://comunidad.socialab.com/challenges/soluciones2019/idea/95899",
+            "descripcion":" ",
+            "ubicacion":"Posadas, Misiones (Argentina)",
+            "img":"https://comunidad.socialab.com/uploads/15679762735d756b510c5d5.jpg?w=1080&crop-to-fit"
+        }
+    ]
+}

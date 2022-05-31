@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+            <form  novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Institución</label>
+                    <input type="text" class="form-control" id="institucion" name="institucion"
+                    [(ngModel)]="educacionNueva.institucion" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Titulación Obtenida</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo"
+                    [(ngModel)]="educacionNueva.titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Inicio</label>
+                    <input type="text" class="form-control" id="inicio" name="inicio"
+                    [(ngModel)]="educacionNueva.inicio" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Fin</label>
+                    <input type="text" class="form-control" id="fin" name="fin"
+                    [(ngModel)]="educacionNueva.fin" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Ubicación de la Institución</label>
+                    <input type="text" class="form-control" id="ubicacion" name="ubicacion"
+                    [(ngModel)]="educacionNueva.ubicacion" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Logo de la Institución</label>
+                    <input type="text" class="form-control" id="logo" name="logo"
+                    [(ngModel)]="educacionNueva.logo" required>
+                </div>
+                <div class="form-group row">
+                    <label for="persona" class="col-form-label ">Persona a la que Pertenece</label>
+                    <select class="form-select" aria-label="Default select example" [(ngModel)]="educacionNueva.persona"  name="persona">
+                        <option *ngFor="let persona of personas" [ngValue]="persona">{{persona.nombre}}</option>
+                    </select >
+                </div>
+                <button class="btn btn-outline-success btn-block"   (click)="onCreate()" *ngIf="!educacionNueva.idEd">
+                    <i class="fas fa-pencil-alt"></i> Agregar</button>
+                    <button class="btn btn-outline-success btn-block" (click)="actualizarEducacion()" *ngIf="educacionNueva.idEd" >
+                        <i class="fas fa-pencil-alt"></i> Guardar</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/portfolioedit">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>

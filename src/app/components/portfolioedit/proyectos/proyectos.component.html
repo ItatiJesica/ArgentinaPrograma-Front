@@ -1,0 +1,32 @@
+<div class="card mat-card" id="proyectos">
+  <div class="mat-card-title">
+    <h2>Proyectos
+      <button mat-fab color="primary"  [routerLink]="['/edit-proyectos']">
+        <i class="bi bi-plus-lg" style="font-size: 1.5rem"></i>
+      </button>
+    </h2>
+  </div>
+  <div>
+    <ul class="item-list">
+      <li *ngFor="let proyecto of proyectos">
+        <div class="data-container">
+          <div class="logo-image-container">
+            <img class="logos" [src]="proyecto.logo">
+            <div class="seccion-lista">
+              <div>
+                <h2>{{proyecto.nombre}}</h2>
+                <h3>{{proyecto.descripcion}}</h3>
+              </div>
+            </div>
+            <button mat-fab color="basic" style="margin-right: 20px" [routerLink]="['/edit-proyectos', proyecto.idPro]">
+              <i class="bi bi-pencil-square" style="font-size: 1.5rem"></i>
+            </button>
+            <button mat-fab color="warn" style="margin-right: 20px" (click)="eliminarPro(proyecto.idPro)">
+              <i class="bi bi-trash3" style="font-size: 1.5rem"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

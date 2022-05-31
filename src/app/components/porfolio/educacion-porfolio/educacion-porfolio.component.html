@@ -1,0 +1,25 @@
+<div class="card mat-card" id="educacion">
+    <div class="mat-card-title">
+        <h2>Educación</h2>
+    </div>
+    <div>
+        <ul class="item-list">
+            <li *ngFor="let educacion of educacion">
+                <div class="data-container">
+                    <div class="logo-image-container">
+                        <img class="logos" [src]="educacion.logo">
+                        <div class="seccion-lista">
+                            <div>
+                                <h4>{{educacion.institucion}}</h4>
+                                <p>{{educacion.titulo}}</p>
+                                <p><time>{{educacion.inicio}}</time> - <time>{{educacion.fin}}</time></p>
+                                <p>{{educacion.ubicacion}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-8 mx-auto">
+                <form novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre"
+                        [(ngModel)]="personaNueva.nombre" required >
+                        <label for="precio">Titulo de la Persona</label>
+                        <input type="text" class="form-control" id="titulo" name="titulo"
+                        [(ngModel)]="personaNueva.titulo" required>
+                        <label for="precio">Acerca de la Persona</label>
+                        <input type="text" class="form-control" id="acercade" name="acercade"
+                        [(ngModel)]="personaNueva.descripcion" required >
+                        <label for="precio">Información de Contacto</label>
+                        <input type="text" class="form-control" id="contacto" name="contacto"
+                        [(ngModel)]="personaNueva.contacto" required>
+                        <label for="precio">Ubicación</label>
+                        <input type="text" class="form-control" id="ubicacion" name="ubicacion"
+                        [(ngModel)]="personaNueva.ubicacion" required>
+                        <label for="precio">Foto de la Persona</label>
+                        <input type="text" class="form-control" id="foto" name="foto"
+                        [(ngModel)]="personaNueva.foto" required>
+                    </div>
+                    <button class="btn btn-outline-success btn-block" (click)="actualizarPersona()" *ngIf="personaNueva.id" >
+                        <i class="fas fa-pencil-alt"></i> Guardar</button>
+                <button class="btn btn-outline-primary btn-block" routerLink="/portfolioedit">
+                    <i class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="card mat-card" id="habilidades">
+  <div class="mat-card-title">
+    <h2>Habilidades
+      <button mat-fab color="primary" style="margin-right: 20px" [routerLink]="['/edit-habilidades']">
+        <i class="bi bi-plus-lg" style="font-size: 1.5rem"></i>
+      </button>
+    </h2>
+  </div>
+<div>
+  <ul class="item-list">
+    <li *ngFor="let habilidad of habilidades">
+      <h1 class="titulo">{{habilidad.habilidad}} {{habilidad.porcentaje}}%
+        <button mat-mini-fab color="basic" style="margin-right: 2px" [routerLink]="['/edit-habilidades', habilidad.idHab]">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <button mat-mini-fab color="warn" (click)="eliminarHab(habilidad.idHab)">
+          <i class="bi bi-trash3"></i>
+        </button>
+      </h1>
+      <circle-progress class="circle" [percent]="habilidad.porcentaje" [radius]="100" [space]="1"
+        [title]="habilidad.habilidad" [outerStrokeWidth]="15" [outerStrokeColor]="'#15C97A'" [innerStrokeWidth]="0"
+        [animation]=true [innerStrokeColor]="'#37F3A1'" [titleColor]="'#000000'" [subtitleColor]="'#000000'"
+        [subtitle]="''" [units]="''" [titleFontSize]="'30'" [showImage]=true [imageSrc]="habilidad.logo"
+        [imageHeight]=100 [imageWidth]=110></circle-progress>
+
+    </li>
+  </ul>
+</div>
+</div>

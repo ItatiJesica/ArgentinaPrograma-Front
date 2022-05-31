@@ -1,0 +1,30 @@
+<div id="header-medio">
+  <img id="banner" src= "https://img.freepik.com/foto-gratis/fondo-futurista-abstracto-diseno-3d_1361-3532.jpg?w=996&t=st=1653867080~exp=1653867680~hmac=0a703d71030af7bffa88b7cb810878e0fcd1e9f276d95a3395fa2ea4a1c91c8e">
+</div>
+<div class="card mat-card" id="acercade">
+  <div *ngFor="let persona of personas">
+      <div class="mat-card-title">
+          <div class="presentacion">
+              <img [src]="persona.foto" id="imagen-perfil" style="
+        border-radius: 100%;
+        width:15vw;
+        height: 40vh;
+        margin-top: -150px" />
+              <p id="text-nombreCompleto">{{persona.nombre}}</p>
+              <p id="info-titulo">{{persona.titulo}}</p>
+              <p id="info-ubicacion">{{persona.ubicacion}}</p>
+              <p id="info-contacto">{{persona.contacto}}</p>
+          </div>
+          <div class="mat-card-content">
+              <h2>Acerca de
+                <button mat-fab color="basic" style="margin-right: 55px" [routerLink]="['/edit-acerca-de', persona.id]">
+                  <i class="bi bi-pencil-square" style="font-size: 1.5rem"></i>
+                </button>
+              </h2>
+              <h2 id="text-acercade">{{persona.descripcion}}</h2>
+              <h2>{{persona.id}}</h2>
+          </div>
+      </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

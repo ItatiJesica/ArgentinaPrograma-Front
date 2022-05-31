@@ -1,0 +1,36 @@
+<div class="card mat-card" id="experiencia">
+  <div class="mat-card-title">
+    <h2>Experiencia
+      <button mat-fab color="primary" style="margin-right: 20px" [routerLink]="['/add-experiencia']">
+        <i class="bi bi-plus-lg" style="font-size: 1.5rem"></i>
+      </button>
+    </h2>
+  </div>
+  <div>
+    <ul class="item-list">
+      <li *ngFor="let experiencia of experiencias">
+        <div class="data-container">
+          <div class="logo-image-container">
+            <img class="logos" [src]="experiencia.logo">
+            <div class="seccion-lista">
+              <div>
+                <h3>{{experiencia.empresa}}</h3>
+                <p>{{experiencia.puesto}}</p>
+                <p>{{experiencia.tipo}}</p>
+                <p><time>{{experiencia.inicio}}</time> - <time>{{experiencia.fin}}</time></p>
+                <p>{{experiencia.ubicacion}}</p>
+              </div>
+            </div>
+            <button mat-fab color="basic" style="margin-right: 20px" [routerLink]="['/add-experiencia', experiencia.idExp]">
+              <i class="bi bi-pencil-square" style="font-size: 1.5rem"></i>
+            </button>
+            <button mat-fab color="warn" style="margin-right: 20px" (click)="eliminarExp(experiencia.idExp)">
+              <i class="bi bi-trash3" style="font-size: 1.5rem"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

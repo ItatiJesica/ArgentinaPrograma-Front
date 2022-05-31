@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/APLogo-20-20.png" id="logo-ArgProg" />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <a href="https://www.facebook.com/itatijesica/"><img src="../../../assets/logo_de_facebook.png" id="facebook"
+          style="width:60px"></a>
+      <a href="https://www.instagram.com/jesicabalmaceda/?hl=es-la"><img
+          src="../../../assets/logo_de_inst-removebg-preview.png" id="instagram" style="width:60px"></a>
+      <a href="https://www.linkedin.com/in/jesica-balmaceda"><img src="../../../assets/logo_de_linkedin.png"
+          id="linkedin" style="width:60px"></a>
+      <li class="nav-item" *ngIf="!isLogged">
+        <button type="button" routerLink="/login" class="btn btn-primary">Iniciar Sesión</button>
+      </li>
+      <li class="nav-item" *ngIf="isLogged" (click)="onLogOut()">
+        <button type="button" routerLink="/porfolio" class="btn btn-primary">Cerrar Sesión</button>
+      </li>
+    </div>
+  </div>
+</nav>
+

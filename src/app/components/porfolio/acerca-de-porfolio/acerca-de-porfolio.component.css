@@ -1,0 +1,23 @@
+.card.mat-card {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+
+.card.mat-card h2 {
+    width: 70rem;
+}
+
+
+.mat-card-content h2 {
+    align-content: center;
+
+}
+
+.mat-card-title{
+    display: flex;
+    justify-content: space-between;
+}
+#header-medio{
+    width: 100%;
+}

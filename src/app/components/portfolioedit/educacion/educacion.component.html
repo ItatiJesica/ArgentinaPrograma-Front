@@ -1,0 +1,34 @@
+<div class="card mat-card" id="educacion">
+  <div class="mat-card-title">
+    <h2>Educación
+      <button mat-fab color="primary" style="margin-right: 20px"  [routerLink]="['/edit-educacion']">
+        <i class="bi bi-plus-lg" style="font-size: 1.5rem"></i>
+      </button>
+    </h2>
+  </div>
+  <div>
+    <ul class="item-list">
+      <li *ngFor="let educacion of educacion">
+        <div class="data-container">
+          <div class="logo-image-container">
+            <img class="logos" [src]="educacion.logo">
+            <div class="seccion-lista">
+              <div>
+                <h4>{{educacion.institucion}}</h4>
+                <p>{{educacion.titulo}}</p>
+                <p><time>{{educacion.inicio}}</time> - <time>{{educacion.fin}}</time></p>
+                <p>{{educacion.ubicacion}}</p>
+              </div>
+            </div>
+            <button mat-fab color="basic" style="margin-right: 20px" [routerLink]="['/edit-educacion', educacion.idEd]">
+              <i class="bi bi-pencil-square" style="font-size: 1.5rem"></i>
+            </button>
+            <button mat-fab color="warn" style="margin-right: 20px" (click)="eliminarEd(educacion.idEd)">
+              <i class="bi bi-trash3" style="font-size: 1.5rem"></i>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

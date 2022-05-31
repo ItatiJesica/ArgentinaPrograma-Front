@@ -1,0 +1,31 @@
+.card.mat-card ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+
+.bi.bi-pencil-square{
+    color:#3F51B5;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.item-list li{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card.mat-card ul li{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(55, 247, 218, 0.15);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px #92d7d28c;
+    margin: 2rem 2rem;
+    text-align: center;
+  }

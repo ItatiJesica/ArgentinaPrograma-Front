@@ -1,0 +1,24 @@
+<div class="card mat-card" id="experiencia">
+    <div class="mat-card-title">
+        <h2>Experiencia</h2>
+    </div>
+    <div>
+        <ul class="item-list">
+            <li *ngFor="let experiencia of experiencias">
+                <div class="data-container">
+                    <div class="logo-image-container">
+                        <img class="logos" [src]="experiencia.logo">
+                        <div class="seccion-lista">
+                            <div>
+                                <h3>{{experiencia.empresa}}</h3>
+                                <p>{{experiencia.puesto}}</p>
+                                <p>{{experiencia.tipo}}</p>
+                                <p><time>{{experiencia.inicio}}</time> - <time>{{experiencia.fin}}</time></p>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

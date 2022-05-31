@@ -1,0 +1,14 @@
+.container{
+    background-color:rgba(252, 252, 252, 0);
+    color:black;
+}
+form.ng-untouched.ng-pristine.ng-valid{
+    background-color:white;
+}
+
+
+div.form-group {
+    border-radius: 5px;
+    background-color: rgb(252, 252, 252);
+    padding: 10px;
+}

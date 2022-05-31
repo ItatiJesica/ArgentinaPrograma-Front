@@ -1,0 +1,19 @@
+<div class="card mat-card" id="habilidades">
+    <div class="mat-card-title">
+        <h2>Habilidades</h2>
+    </div>
+    <div>
+        <ul class="item-list">
+            <li *ngFor="let habilidad of habilidades">
+                <h1 class="titulo">{{habilidad.habilidad}} {{habilidad.porcentaje}}%
+                </h1>
+                <circle-progress class="circle" [percent]="habilidad.porcentaje" [radius]="100" [space]="1"
+                    [title]="habilidad.habilidad" [outerStrokeWidth]="15" [outerStrokeColor]="'#15C97A'"
+                    [innerStrokeWidth]="0" [animation]=true [innerStrokeColor]="'#37F3A1'" [titleColor]="'#000000'"
+                    [subtitleColor]="'#000000'" [subtitle]="''" [units]="''" [titleFontSize]="'30'" [showImage]=true
+                    [imageSrc]="habilidad.logo" [imageHeight]=100 [imageWidth]=110></circle-progress>
+            </li>
+        </ul>
+    </div>
+</div>
+  
