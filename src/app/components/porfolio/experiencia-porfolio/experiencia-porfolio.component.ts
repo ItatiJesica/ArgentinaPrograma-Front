@@ -12,6 +12,7 @@ export class ExperienciaPorfolioComponent implements OnInit {
   faPlusCircle = faPlusCircle;
   faEdit = faEdit;
   experiencias: Experiencia[] = [];
+  load=false;
 
   constructor(private experienciaService: ExperienciaService) {}
 
@@ -22,6 +23,7 @@ export class ExperienciaPorfolioComponent implements OnInit {
   listarExperiencia() {
     this.experienciaService.lista().subscribe(
       (res) => {
+        this.load=true;
         this.experiencias = res;
       },
       (err) => console.log(err)

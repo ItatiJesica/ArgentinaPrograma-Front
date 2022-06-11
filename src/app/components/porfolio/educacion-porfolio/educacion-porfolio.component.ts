@@ -12,6 +12,7 @@ export class EducacionPorfolioComponent implements OnInit {
   faPlusCircle= faPlusCircle;
   faEdit = faEdit;
   educacion: Educacion[]=[];
+  load=false;
 
 
   constructor(private educacionService:EducacionService) { }
@@ -22,7 +23,9 @@ export class EducacionPorfolioComponent implements OnInit {
 
   listarEducacion(){
     this.educacionService.lista().subscribe(
-      res=>{this.educacion=res},
+      res=>{
+        this.load=true;
+        this.educacion=res},
       err=>console.log(err)
     )
   }

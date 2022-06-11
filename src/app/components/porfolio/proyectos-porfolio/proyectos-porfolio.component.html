@@ -4,6 +4,7 @@
     </div>
     <div>
         <ul class="item-list">
+            <div *ngIf="load; else nocarga">
             <li *ngFor="let proyecto of proyectos">
                 <div class="data-container">
                     <div class="logo-image-container">
@@ -18,6 +19,16 @@
                     </div>
                 </div>
             </li>
+            </div>
         </ul>
     </div>
 </div>
+<ng-template #nocarga>
+    <div class="card mat-card">
+        <ul>
+            <h1>Cargando..</h1>
+            <mat-spinner color="accent"></mat-spinner>
+        </ul>
+    </div>
+
+</ng-template>

@@ -1,8 +1,8 @@
 .card.mat-card ul li{
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(55, 247, 218, 0.15);
-    border-radius: 0.5rem;
-    box-shadow: 5px 5px 15px #92d7d28c;
-    margin: 2rem 5rem;
-  }
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(55, 247, 218, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px #92d7d28c;
+  margin: 2rem 5rem;
+}

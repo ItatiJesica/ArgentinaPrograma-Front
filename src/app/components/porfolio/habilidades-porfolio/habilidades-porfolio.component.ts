@@ -12,7 +12,7 @@ export class HabilidadesPorfolioComponent implements OnInit {
   faPlusCircle = faPlusCircle;
   faEdit = faEdit;
   habilidades: Habilidad[] = [];
-
+  load=false;
   constructor(private habilidadService: HabilidadService) {}
   ngOnInit(): void {
     this.listarHabilidad();
@@ -21,6 +21,7 @@ export class HabilidadesPorfolioComponent implements OnInit {
   listarHabilidad() {
     this.habilidadService.lista().subscribe(
       (res) => {
+        this.load=true;
         this.habilidades = res;
       },
       (err) => console.log(err)

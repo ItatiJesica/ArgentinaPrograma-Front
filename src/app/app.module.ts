@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -73,7 +74,8 @@ import { EditProyectosComponent } from './components/buttonsedit/edit-proyectos/
     MatCardModule,
     FormsModule,
     ToastrModule.forRoot(),
-    NgbModule
+    NgbModule,
+    MatProgressSpinnerModule
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent]

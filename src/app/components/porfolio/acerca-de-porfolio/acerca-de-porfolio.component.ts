@@ -11,7 +11,7 @@ import { PersonaService } from 'src/app/servicios/persona.service';
 export class AcercaDePorfolioComponent implements OnInit {
   faEdit = faEdit;
   personas: Persona[]=[];
-  
+  load=false;
   constructor(private personaService: PersonaService) { 
 
   }
@@ -23,7 +23,9 @@ export class AcercaDePorfolioComponent implements OnInit {
 
   listarPersonas(){
     this.personaService.lista().subscribe(
-      res=>{this.personas=res},
+      res=>{
+        this.load=true;
+        this.personas=res},
       err=>console.log(err)
     )
   }

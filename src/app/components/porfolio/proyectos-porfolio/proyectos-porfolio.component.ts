@@ -12,7 +12,7 @@ export class ProyectosPorfolioComponent implements OnInit {
   faPlusCircle= faPlusCircle;
   faEdit= faEdit;
   proyectos: Proyecto[]=[];
-
+  load=false;
 
   constructor(private proyectoService: ProyectoService) { }
 
@@ -22,7 +22,9 @@ export class ProyectosPorfolioComponent implements OnInit {
 
   listarProyectos(){
     this.proyectoService.lista().subscribe(
-      res=>{this.proyectos=res},
+      res=>{
+        this.load=true;
+        this.proyectos=res},
       err=>console.log(err)
     )
   }
